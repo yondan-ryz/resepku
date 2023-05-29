@@ -1,0 +1,131 @@
+@media screen and (min-width: 650px) {
+  #img-logo {
+    width: 15%;
+    margin: 3px;
+  }
+
+  #hamburgerButton {
+    color: white;
+  }
+
+  .menu-food-drink {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  .review {
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .review-item {
+    background-color: #454545;
+    color: white;
+    margin-bottom: 3px;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+    background-color: #454545;
+  }
+
+  .app-bar .app-bar__brand h1 {
+    font-size: 1.5em;
+  }
+
+  .app-bar .app-bar__menu {
+    display: none;
+  }
+
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 100%;
+    background-color: #454545;
+  }
+
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+  }
+
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    color: white;
+  }
+
+  .app-bar .app-bar__navigation ul li a:hover {
+    color: black;
+  }
+
+  .foods {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .food {
+    grid-template-columns: auto 1fr;
+  }
+
+  .food .food__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .food .food__description {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  footer #footerTools {
+    flex-direction: row;
+  }
+
+  .skip-link {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    padding: 8px;
+    background-color: #bf1722;
+    color: white;
+    z-index: 100;
+  }
+
+  .skip-link:focus {
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .app-bar .app-bar__brand h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .foods {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .foods {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .foods {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
