@@ -2,12 +2,9 @@ const createDeveloperItemTemplate = (developer) => `
   <div class="dev-item">
     <div class="dev-item__header">
       <img class="dev-item__header__poster" src="${developer.photo}" alt="${developer.name}">
-      <div class="dev-item__header__rating">
-        <p>⭐️<span class="dev-item__header__rating__score">${developer.skills}</span></p>
-      </div>
     </div>
     <div class="dev-item__content">
-      <h3>${developer.name}</h3>
+      <h3 style="text-align: center">${developer.name}</h3>
     </div>
   </div>
 `;
@@ -30,10 +27,10 @@ const AboutUs = {
 
   generateDeveloperItems() {
     const developers = [
-      { name: 'Developer 1', photo: './images/logo.png', skills: 'Frontend' },
-      { name: 'Developer 2', photo: './images/logo.png', skills: 'Backend' },
-      { name: 'Developer 3', photo: './images/logo.png', skills: 'Full Stack' },
-      { name: 'Developer 3', photo: './images/logo.png', skills: 'Full Stack' },
+      { name: 'Yonathan Dani Kristiawan', photo: './images/logo.png', skills: 'Developer' },
+      { name: 'Katralin', photo: './images/logo.png', skills: 'Developer' },
+      { name: 'Abdul Majid Musthofa', photo: './images/logo.png', skills: 'Developer' },
+      { name: 'Natan Enggal Swasono', photo: './images/logo.png', skills: 'Developer' },
     ];
 
     let developerItems = '';
