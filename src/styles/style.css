@@ -80,6 +80,7 @@ body {
 .app-bar .app-bar__navigation ul li a {
   display: inline-block;
   text-decoration: none;
+  white-space: nowrap;
   color: black;
   padding: 8px;
   margin-bottom: 5px;
