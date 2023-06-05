@@ -485,3 +485,92 @@ ul{
 
 
 
+
+.devs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.dev-item {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dev-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dev-item__header {
+  position: relative;
+}
+
+.dev-item .dev-item__header .dev-item__header__poster {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.dev-item .dev-item__header .dev-item__header__rating {
+  position: absolute;
+  padding: 8px;
+  bottom: 20px;
+  left: 0;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+
+.dev-item .dev-item__header .dev-item__header__rating .dev-item__header__rating__score {
+  margin-left: 10px;
+}
+
+.dev-item .dev-item__content {
+  padding: 16px;
+}
+
+.dev-item .dev-item__content h3 {
+  margin: 0 0 10px 0;
+}
+
+.dev-item .dev-item__content h3 a {
+  color: #FF6000;
+  text-decoration: none;
+}
+
+.dev-item .dev-item__content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.dev {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px 16px;
+}
+
+.dev .dev__poster {
+  width: 100%;
+  max-width: 400px;
+}
+
+.dev .dev__info h4 {
+  margin: 8px 0;
+}
+
+
+
+
+
