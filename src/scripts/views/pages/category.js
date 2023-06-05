@@ -1,6 +1,6 @@
 const TheMealDbSource = {
-  async searchMealByName(keyword) {
-    const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${keyword}`);
+  async searchMealByCategory(category) {
+    const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`);
     const responseJson = await response.json();
     return responseJson.meals;
   },
@@ -20,14 +20,20 @@ const createFoodItemTemplate = (food) => `
   </div>
 `;
 
-const ListFood = {
+const CategoryFood = {
   async render() {
     return `
       <div class="content">
         <h2 class="content__heading">List Food</h2>
         <div class="search-container">
-          <input type="text" id="searchInput" class="search-input" placeholder="Search Foods">
-          <button id="searchButton" class="search-button">Cari</button>
+          <select id="categorySelect" class="category-select">
+            <option value="" selected>All Categories</option>
+            <option value="Beef">Beef</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Dessert">Dessert</option>
+            <!-- Tambahkan opsi kategori lainnya sesuai kebutuhan -->
+          </select>
+          <button id="searchButton" class="search-button">Search</button>
         </div>
         <div id="searchMessage" class="search-message"></div>
         <div id="foods" class="foods"></div>  
@@ -37,8 +43,8 @@ const ListFood = {
 
   async afterRender() {
     const foodsContainer = document.querySelector('#foods');
+    const categorySelect = document.querySelector('#categorySelect');
     const searchButton = document.querySelector('#searchButton');
-    const searchInput = document.querySelector('#searchInput');
     const searchMessage = document.querySelector('#searchMessage');
 
     const renderFoods = async (foods) => {
@@ -52,47 +58,40 @@ const ListFood = {
         });
       }
 
-      // Hapus pesan "Makanan tidak ditemukan" jika ada
       if (searchMessage) {
         searchMessage.innerHTML = '';
       }
     };
 
     const searchFoods = async () => {
-      const searchQuery = searchInput.value;
-      if (searchQuery.trim() !== '') {
+      const selectedCategory = categorySelect.value;
+      if (selectedCategory.trim() !== '') {
         try {
-          // Tampilkan teks "Mencari data..."
-          searchMessage.innerHTML = 'Mencari data...';
+          searchMessage.innerHTML = 'Searching...';
 
-          const foods = await TheMealDbSource.searchMealByName(searchQuery);
+          const foods = await TheMealDbSource.searchMealByCategory(selectedCategory);
           renderFoods(foods);
 
           if (foods === null || foods.length === 0) {
-            searchMessage.innerHTML = `Makanan "${searchQuery}" tidak ditemukan`;
+            searchMessage.innerHTML = `No meals found in the "${selectedCategory}" category`;
           } else {
-            searchMessage.innerHTML = `Menampilkan pencarian dari kata kunci: "${searchQuery}"`;
+            searchMessage.innerHTML = `Showing results for category: "${selectedCategory}"`;
           }
         } catch (error) {
           console.error(error);
-          searchMessage.innerHTML = 'Tidak bisa memuat data';
+          searchMessage.innerHTML = 'Failed to fetch data';
         }
       } else {
-        searchMessage.innerHTML = 'Masukan kata kunci terlebih dahulu';
+        searchMessage.innerHTML = 'Please select a category';
       }
     };
 
     searchButton.addEventListener('click', searchFoods);
 
-    searchInput.addEventListener('keyup', (event) => {
-      if (event.keyCode === 13) {
-        event.preventDefault();
-        searchFoods();
-      }
-    });
+    categorySelect.addEventListener('change', searchFoods);
 
-    renderFoods([]); // Tampilkan daftar kosong saat halaman dibuka
+    renderFoods([]);
   },
 };
 
-export default ListFood;
+export default CategoryFood;
