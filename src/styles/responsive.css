@@ -1,7 +1,60 @@
+@media screen and (min-width: 400px) {
+h4{
+  position: absolute;
+  color: #a5723a;
+  font-weight: 700;
+	font-size: 15px;
+	text-shadow: 1px 1px #141414
+}
+.atasKiri{
+  left: 40%;
+    top: 44%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}}
+
 @media screen and (min-width: 650px) {
   #img-logo {
     width: 15%;
     margin: 3px;
+  }
+
+  h4{
+    position: absolute;
+    color: #a5723a;
+    font-weight: 700;
+    font-size: 20px;
+    text-shadow: 1px 1px #141414
+  }
+  .atasKiri{
+    left: 40%;
+      top: 45%;
+      transform: translate(-50%);
+      -webkit-transform: translate(-50%);
+      -moz-transform: translate(-50%);
+      -o-transform: translate(-50%);
+  }
+
+  .headline {
+    display: flex;
+    align-items: center;
+    min-height: 330px;
+    width: 100%;
+    text-align: center;
+    background-position: center;
+      padding: 8px;
+      margin: 30px;
+      padding-top: 20px;
+      text-align: justify;
+     
+  }
+
+  .headline__content {
+    width: 600px;
+    float: left;
+    padding: 1px 32px;
   }
 
   #hamburgerButton {
@@ -33,7 +86,7 @@
   .app-bar {
     grid-template-columns: 1fr auto;
     padding: 8px 32px;
-    background-color: #454545;
+    background-color: rgb(97, 74, 49);
   }
 
   .app-bar .app-bar__brand h1 {
@@ -47,7 +100,7 @@
   .app-bar .app-bar__navigation {
     position: static;
     width: 100%;
-    background-color: #454545;
+    background-color: #614a3196;
   }
 
   .app-bar .app-bar__navigation ul li {
@@ -109,6 +162,25 @@
 @media screen and (min-width: 800px) {
   .app-bar .app-bar__brand h1 {
     font-size: 2em;
+  }
+
+  .headline {
+    display: flex;
+    align-items: center;
+    min-height: 330px;
+    width: 100%;
+    text-align: center;
+    background-position: center;
+      padding: 8px;
+      margin: 30px;
+      padding-top: 20px;
+      text-align: justify;
+  }
+
+  .headline__content {
+    width: 800px;
+    float: left;
+    padding: 1px 32px;
   }
 }
 
