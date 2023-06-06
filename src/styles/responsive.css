@@ -146,6 +146,10 @@
     background-image: url("../public/images/heros/hero-image_2.jpg");
     background-position: center;
   }
+
+  .detail-item .detail-item__content {
+    padding: 20px;
+  }
 }
 
 @media screen and (min-width: 850px) {
