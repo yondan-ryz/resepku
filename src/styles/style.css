@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  transition: all 0.3s ease;
 }
 
 body {
@@ -124,7 +125,7 @@ body {
 */
 
 main {
-  padding: 32px;
+  padding: 15px;
   flex: 1;
 }
 
@@ -134,20 +135,21 @@ main {
 }
 
 .content .content__heading {
-  font-weight: normal;
+  font-weight: bolder;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  text-decoration: underline;
+  margin-bottom: 10px;
 }
 
 .detailFood {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
-  margin: 32px 0;
 }
 
 .detail-item {
   width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
   overflow: hidden;
   background-color: white;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -155,20 +157,33 @@ main {
 
 .detail-item__header {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .detail-item .detail-item__header .detail-item__header__poster {
   width: 100%;
   height: 400px;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .detail-item .detail-item__content {
   padding: 16px;
 }
 
+.detail-item__title{
+  text-align: center;
+  font-weight: bolder;
+  font-size: x-large;
+  color: #24262b;
+  text-decoration: underline;
+}
+
 .detail-item .detail-item__content h3 {
-  margin: 0 0 10px 0;
+  margin: 15px 0 0 0;
+  text-decoration: underline;
 }
 
 .detail-item .detail-item__content h3 a {
@@ -290,27 +305,6 @@ footer p {
 footer p a {
   color: #FF6000;
   text-decoration: none;
-}
-
-/*
-  Like
-*/
-
-.like {
-  font-size: 18px;
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  background-color: #FF6000;
-  color: white;
-  border: 0;
-  border-radius: 50%;
-  width: 55px;
-  height: 55px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /*
@@ -441,7 +435,6 @@ ul{
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
-	color: #ffffff;
 	text-decoration: none;
 	font-weight: 300;
 	color: #bbbbbb;
@@ -570,7 +563,24 @@ ul{
   margin: 8px 0;
 }
 
+.image-search-message{
+  max-height: 80px;
+  transition: all 5s ease;
+}
 
+.hr-line{
+  height: 2px;
+  background-color: #454545;
+  border: none;
+  margin: 20px 0;
+}
+
+.hr-footer{
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  margin: 10px 0;
+}
 
 
 

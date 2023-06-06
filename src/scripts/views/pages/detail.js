@@ -27,8 +27,9 @@ const DetailFood = {
             <div class="detail-item__header">
               <img class="detail-item__header__poster" src="${foodDetail.strMealThumb}" alt="${foodDetail.strMeal}">
             </div>
+            <div class="hr-line"></div>
             <div class="detail-item__content">
-              <h3>${foodDetail.strMeal}</h3>
+              <h3 class="detail-item__title">${foodDetail.strMeal}</h3>
               <br>
               <h3>Intruksi</h3>
               <p>${foodDetail.strInstructions}</p>

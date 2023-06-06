@@ -63,8 +63,8 @@ const ListFood = {
       if (searchQuery.trim() !== '') {
         try {
           // Tampilkan teks "Mencari data..."
-          searchMessage.innerHTML = 'Mencari data...';
-
+          // searchMessage.innerHTML = 'Mencari data...';
+          searchMessage.innerHTML = '<img class="image-search-message" style=""  src="./images/loader.gif" alt="">';
           const foods = await TheMealDbSource.searchMealByName(searchQuery);
           renderFoods(foods);
 
