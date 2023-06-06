@@ -91,7 +91,7 @@ body {
 .hero {
   display: flex;
   align-items: center;
-  min-height: 380px;
+  min-height: 200px;
   width: 100%;
   text-align: center;
   background-image: url("../public/images/heros/hero-image_2.jpg");
