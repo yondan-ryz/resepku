@@ -416,6 +416,7 @@ ul{
    width: 25%;
    padding: 0 15px;
 }
+
 .footer-col h4{
 	font-size: 18px;
 	color: #770000;
@@ -423,16 +424,18 @@ ul{
 	margin-bottom: 35px;
 	font-weight: 500;
 	position: relative;
+  text-align: right;
 }
 .footer-col h4::before{
 	content: '';
 	position: absolute;
-	left:0;
+	right: 15;
 	bottom: -10px;
 	background-color: #e91e63;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
+  text-align: right;
 }
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
@@ -446,6 +449,8 @@ ul{
 	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
+  text-align: left;
+  
 }
 .footer-col ul li a:hover{
 	color: #770000;
@@ -465,7 +470,7 @@ ul{
 }
 .footer-col .social-links a:hover{
 	color: #24262b;
-	background-color: #770000;
+	background-color: #bb0707;
 }
 
 /*responsive*/
