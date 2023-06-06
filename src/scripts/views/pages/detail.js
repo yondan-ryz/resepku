@@ -22,6 +22,7 @@ const DetailFood = {
 
       if (foodDetail) {
         // Menampilkan elemen detail-item
+        /* eslint-disable no-use-before-define */
         foodDetailContainer.innerHTML = `
           <div class="detail-item">
             <div class="detail-item__header">
@@ -31,16 +32,17 @@ const DetailFood = {
             <div class="detail-item__content">
               <h3 class="detail-item__title">${foodDetail.strMeal}</h3>
               <br>
-              <h3>Intruksi</h3>
+              <h3>Intruksi:</h3>
               <p>${foodDetail.strInstructions}</p>
-              <h3>Category</h3>
+              <h3>Category:</h3>
               <p>${foodDetail.strCategory}</p>
-               <h3>Area</h3>
+              <h3>Area:</h3>
               <p>${foodDetail.strArea}</p>
-              <h3>Tag</h3>
+              <h3>Tag:</h3>
               <p>${foodDetail.strTags}</p>
               
-               <a href="${foodDetail.strYoutube}" target="_blank">Tonton di YouTube</a>
+              <h3>Video Youtube:</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/${getYouTubeVideoId(foodDetail.strYoutube)}" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
         `;
@@ -54,5 +56,15 @@ const DetailFood = {
     }
   },
 };
+
+// Function to extract YouTube video ID from the URL
+function getYouTubeVideoId(url) {
+  const videoIdRegex = /(?:https?:\/\/(?:www\.)?)?youtu(?:\.be\/|be\.com\/(?:watch\?v=|embed\/|v\/))([^&?/\s]+)/;
+  const match = url.match(videoIdRegex);
+  if (match && match[1]) {
+    return match[1];
+  }
+  return null;
+}
 
 export default DetailFood;

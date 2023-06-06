@@ -582,5 +582,16 @@ ul{
   margin: 10px 0;
 }
 
+iframe {
+  width: 100%; /* Untuk layar kecil */
+}
+
+@media (min-width: 768px) {
+  iframe {
+    width: 50%; /* Untuk layar desktop */
+    margin: 0 auto; /* Mengatur posisi horizontal menjadi tengah (justify center) */
+  }
+}
+
 
 
