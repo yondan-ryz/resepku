@@ -25,6 +25,7 @@ const ListFood = {
     return `
       <div class="content">
         <h2 class="content__heading">List Food</h2>
+            <div class="hr-footer"></div>
         <div class="search-container">
           <input type="text" id="searchInput" class="search-input" placeholder="Search Foods">
           <button id="searchButton" class="search-button">Cari</button>

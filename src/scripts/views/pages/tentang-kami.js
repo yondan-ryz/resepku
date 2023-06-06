@@ -14,6 +14,7 @@ const AboutUs = {
     return `
       <div class="content">
         <h2 class="content__heading">About Us</h2>
+            <div class="hr-footer"></div>
         <div id="devs" class="devs">
           ${this.generateDeveloperItems()}
         </div>  
