@@ -32,6 +32,27 @@ const DetailFood = {
               <br>
               <h3>Intruksi</h3>
               <p>${foodDetail.strInstructions}</p>
+              <h3>Resep</h3>
+              <p>${foodDetail.strIngredient1}</p>
+              <p>${foodDetail.strIngredient2}</p>
+              <p>${foodDetail.strIngredient3}</p>
+              <p>${foodDetail.strIngredient4}</p>
+              <p>${foodDetail.strIngredient5}</p>
+              <p>${foodDetail.strIngredient6}</p>
+              <p>${foodDetail.strIngredient7}</p>
+              <p>${foodDetail.strIngredient8}</p>
+              <p>${foodDetail.strIngredient9}</p>
+              <p>${foodDetail.strIngredient10}</p>
+              <p>${foodDetail.strIngredient11}</p>
+              <p>${foodDetail.strIngredient12}</p>
+              <p>${foodDetail.strIngredient13}</p>
+              <p>${foodDetail.strIngredient14}</p>
+              <p>${foodDetail.strIngredient15}</p>
+              <p>${foodDetail.strIngredient16}</p>
+              <p>${foodDetail.strIngredient17}</p>
+              <p>${foodDetail.strIngredient18}</p>
+              <p>${foodDetail.strIngredient19}</p>
+              <p>${foodDetail.strIngredient20}</p>
               <h3>Category</h3>
               <p>${foodDetail.strCategory}</p>
                <h3>Area</h3>
