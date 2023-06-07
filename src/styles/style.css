@@ -508,7 +508,6 @@ ul{
 
 .dev-item .dev-item__header .dev-item__header__poster {
   width: 100%;
-  height: 190px;
   object-fit: cover;
 }
 
@@ -540,11 +539,7 @@ ul{
 }
 
 .dev-item .dev-item__content p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4; /* number of lines to show */
-  -webkit-box-orient: vertical;
+  text-align: center;
 }
 
 .dev {
@@ -570,6 +565,11 @@ ul{
   transition: all 5s ease;
 }
 
+.image-notfound{
+  max-height: 150px;
+  transition: all 5s ease;
+}
+
 .hr-line{
   height: 2px;
   background-color: #454545;
@@ -577,7 +577,7 @@ ul{
   margin: 20px 0;
 }
 
-.hr-footer{
+.hr-thin{
   height: 1px;
   background-color: #ccc;
   border: none;

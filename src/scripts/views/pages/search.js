@@ -25,7 +25,7 @@ const ListFood = {
     return `
       <div class="content">
         <h2 class="content__heading">List Food</h2>
-            <div class="hr-footer"></div>
+            <div class="hr-thin"></div>
         <div class="search-container">
           <input type="text" id="searchInput" class="search-input" placeholder="Search Foods">
           <button id="searchButton" class="search-button">Cari</button>
@@ -65,18 +65,21 @@ const ListFood = {
         try {
           // Tampilkan teks "Mencari data..."
           // searchMessage.innerHTML = 'Mencari data...';
-          searchMessage.innerHTML = '<img class="image-search-message" style=""  src="./images/loader.gif" alt="">';
+          // eslint-disable-next-line no-useless-concat
+          searchMessage.innerHTML = 'Mencari makanan' + '<br><img class="image-search-message" src="./images/loader.gif" alt="">';
           const foods = await TheMealDbSource.searchMealByName(searchQuery);
           renderFoods(foods);
 
           if (foods === null || foods.length === 0) {
-            searchMessage.innerHTML = `Makanan "${searchQuery}" tidak ditemukan`;
+            // eslint-disable-next-line no-useless-concat
+            searchMessage.innerHTML = `Makanan "${searchQuery}" tidak ditemukan` + '<br><img class="image-notfound" src="./images/notfound.png" alt="">';
           } else {
             searchMessage.innerHTML = `Menampilkan pencarian dari kata kunci: "${searchQuery}"`;
           }
         } catch (error) {
           console.error(error);
-          searchMessage.innerHTML = 'Tidak bisa memuat data';
+          // eslint-disable-next-line no-useless-concat
+          searchMessage.innerHTML = 'Tidak bisa memuat data' + '<br><img class="image-notfound" src="./images/errorsearch.png" alt="">';
         }
       } else {
         searchMessage.innerHTML = 'Masukan kata kunci terlebih dahulu';

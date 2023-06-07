@@ -5,6 +5,8 @@ const createDeveloperItemTemplate = (developer) => `
     </div>
     <div class="dev-item__content">
       <h3 style="text-align: center">${developer.name}</h3>
+      <div class="hr-line"></div>
+      <p>${developer.university}</p>
     </div>
   </div>
 `;
@@ -14,7 +16,7 @@ const AboutUs = {
     return `
       <div class="content">
         <h2 class="content__heading">About Us</h2>
-            <div class="hr-footer"></div>
+            <div class="hr-thin"></div>
         <div id="devs" class="devs">
           ${this.generateDeveloperItems()}
         </div>  
@@ -28,10 +30,10 @@ const AboutUs = {
 
   generateDeveloperItems() {
     const developers = [
-      { name: 'Yonathan Dani Kristiawan', photo: './images/logo.png', skills: 'Developer' },
-      { name: 'Katralin', photo: './images/logo.png', skills: 'Developer' },
-      { name: 'Abdul Majid Musthofa', photo: './images/logo.png', skills: 'Developer' },
-      { name: 'Natan Enggal Swasono', photo: './images/logo.png', skills: 'Developer' },
+      { name: 'Yonathan Dani Kristiawan', photo: './images/dev/yonathan.png', university: 'Universitas Kristen Immanuel' },
+      { name: 'Katralin', photo: './images/dev/yonathan.png', university: 'Developer' },
+      { name: 'Abdul Majid Musthofa', photo: './images/dev/yonathan.png', university: 'Developer' },
+      { name: 'Natan Enggal Swasono', photo: './images/dev/yonathan.png', university: 'Universitas Kristen Immanuel' },
     ];
 
     let developerItems = '';

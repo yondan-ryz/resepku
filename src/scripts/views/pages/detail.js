@@ -26,6 +26,7 @@ const DetailFood = {
         foodDetailContainer.innerHTML = `
           <div class="detail-item">
                         <h3 class="detail-item__title">${foodDetail.strMeal}</h3>
+                        <div class="hr-thin"></div>
             <div class="detail-item__header">
               <img class="detail-item__header__poster" src="${foodDetail.strMealThumb}" alt="${foodDetail.strMeal}">
             </div>
