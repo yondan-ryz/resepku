@@ -21,8 +21,8 @@ const createRestaurantItemTemplate = (food) => `
     <div class="food-item__header">
       <img class="food-item__header__poster" alt="${food.strMeal}"
            src="${food.strMealThumb}">
-      <div class="food-item__header__rating">
-        <p>🎌<span class="food-item__header__rating__score">${food.strArea}</span></p>
+      <div class="food-item__header__floating">
+        <p>🎌<span class="food-item__header__floating__text">${food.strArea}</span></p>
       </div>
     </div>
     <div class="food-item__content">

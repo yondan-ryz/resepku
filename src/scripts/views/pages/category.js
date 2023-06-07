@@ -10,8 +10,8 @@ const createFoodItemTemplate = (food) => `
   <div class="food-item">
     <div class="food-item__header">
       <img class="food-item__header__poster" src="${food.strMealThumb}" alt="${food.strMeal}">
-      <div class="food-item__header__rating">
-        <p>⭐️<span class="food-item__header__rating__score">${food.strCategory}</span></p>
+      <div class="food-item__header__floating">
+        <p>⭐️<span class="food-item__header__floating__text">${food.strCategory}</span></p>
       </div>
     </div>
     <div class="food-item__content">

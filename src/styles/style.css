@@ -229,7 +229,7 @@ main {
   object-fit: cover;
 }
 
-.food-item .food-item__header .food-item__header__rating {
+.food-item .food-item__header .food-item__header__floating {
   position: absolute;
   padding: 8px;
   bottom: 20px;
@@ -239,7 +239,7 @@ main {
   color: white;
 }
 
-.food-item .food-item__header .food-item__header__rating .food-item__header__rating__score {
+.food-item .food-item__header .food-item__header__floating .food-item__header__floating__text {
   margin-left: 10px;
 }
 
