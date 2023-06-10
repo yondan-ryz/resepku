@@ -94,9 +94,21 @@ body {
   min-height: 200px;
   width: 100%;
   text-align: center;
-  background-image: url("../public/images/heros/hero-image_2.jpg");
+  background-image: linear-gradient(
+    90deg,
+    rgba(54, 42, 28, 0.459) 4%,
+    rgba(114, 86, 58, 0.703) 53%,
+    rgba(79, 47, 11, 0.692) 100%
+  ),
+  url(../public/images/heros/hero-image_2.jpg);
   background-position: center;
+  height: 40vh;
 }
+img.lessBright {
+  -webkit-filter: brightness(0.8);
+  filter: brightness(0.5);
+}
+
 
 .hero__inner {
   margin: 0 auto;
@@ -104,19 +116,19 @@ body {
 }
 
 .hero__title {
-  color: #634423;
+  color: #a95015e6;
 	font-weight: 700;
 	font-size: 29px;
-	text-shadow: 1px 1px #141414
+	text-shadow: 1px 1px #000000;
 }
 
 .hero__tagline {
-  color: #634423;
+  color: #b38465;
 	margin-top: 3px;
 	font-size: 18px;
 	font-weight: 600;
 	font-style: oblique;
-	text-shadow: 1px 1px #141414
+	text-shadow: 1px 1px #000000;
 
 }
 
@@ -364,7 +376,7 @@ footer p a {
   top: -80px;
   left: 0;
   padding: 8px;
-  background-color: #bf1722;
+  background-color: #634423;
   color: white;
   z-index: 100;
 }
@@ -415,7 +427,7 @@ ul{
 
 .footer-col h4{
 	font-size: 18px;
-	color: #770000;
+	color: #634423;
 	text-transform: capitalize;
 	margin-bottom: 35px;
 	font-weight: 500;
@@ -426,7 +438,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e63;
+	background-color: #867515;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -444,7 +456,7 @@ ul{
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-	color: #770000;
+	color: #b5630c;
 	padding-left: 8px;
 }
 .footer-col .social-links a{
@@ -660,7 +672,7 @@ iframe {
   margin-left: 10px;
   padding: 12px 20px;
   font-size: 18px;
-  background-color: #db0000;
+  background-color: #634423;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -668,7 +680,7 @@ iframe {
 }
 
 .search-button:hover {
-  background-color: #b70000;
+  background-color: #d37e22;
 }
 .search-message {
   text-align: center;
@@ -685,7 +697,7 @@ iframe {
   display: none;
   width: 40px;
   height: 40px;
-  background-color: #db0000;
+  background-color: #634423;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -715,7 +727,7 @@ iframe {
 
 h4{
   position: absolute;
-  color: #a5723a;
+  color: #634423;
   font-weight: 700;
 	font-size: 10px;
 	text-shadow: 1px 1px #141414
