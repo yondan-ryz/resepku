@@ -29,6 +29,30 @@ const ListFood = {
       <p class="hero__tagline">HALO DANI</p>
     </div>
   </div>
+
+  <div class="content"> 
+  <article class="headline">
+  <figure class="headline__figure">
+    <img src="images/heros/headline.jpg" alt="Dicoding Fact Sheet">
+  </figure>
+  <div class="headline__content">
+  <h2>Artikel</h2>
+  <p>Kami adalah sebuah platform online yang menyediakan kumpulan resep makanan yang beragam dan menginspirasi. Kami percaya bahwa memasak adalah
+   seni yang menyenangkan dan bisa dinikmati oleh siapa pun, baik pemula maupun ahli masak.<span id="dots">...</span><span id="more">Kami selalu berusaha untuk menjaga kualitas resep yang kami tampilkan. Tim kami bekerja sama dengan para ahli masak untuk memastikan setiap resep diuji dan dikurasi dengan cermat. Kami juga selalu terbuka untuk menerima sumbangan resep dari pengguna kami,
+    sehingga kita dapat saling berbagi pengetahuan dan pengalaman dalam dunia memasak.
+   Terima kasih telah bergabung dengan kami di [Nama Website]. Kami berharap Anda menemukan inspirasi dan kesenangan dalam mengeksplorasi resep-resep yang kami sajikan.
+   Mulailah petualangan kuliner Anda sekarang dan jadilah koki di dapur Anda sendiri!</span></p>
+  <button onclick="myFunction()" id="myBtn" class="headline__button">Read more</button>
+  
+  </div>
+</article>
+</div>
+
+<div class="box">
+<img src="images/heros/fish.jpg">
+<h4 class="atasKiri">You Can Find Cooking Ideas Every Day With The Best Selection of Recipes</h4>
+</div>
+
       <div class="content">
         <h2 class="content__heading">List Food</h2>
             <div class="hr-thin"></div>
