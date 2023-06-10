@@ -23,6 +23,12 @@ const createFoodItemTemplate = (food) => `
 const ListFood = {
   async render() {
     return `
+    <div class="hero">
+    <div class="hero__inner">
+      <h1 class="hero__title">HEAD</h1>
+      <p class="hero__tagline">HALO DANI</p>
+    </div>
+  </div>
       <div class="content">
         <h2 class="content__heading">List Food</h2>
             <div class="hr-thin"></div>
