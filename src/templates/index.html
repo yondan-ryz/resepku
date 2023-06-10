@@ -4,7 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#DB0000" />
+    <title>ResepKu</title>
+    <script>
+      window.onload = function() {
+        const scrollToTopButton = document.getElementById('scrollToTopButton');
 
+        scrollToTopButton.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+
+        window.addEventListener('scroll', function() {
+          if (window.pageYOffset > 200) {
+            scrollToTopButton.style.display = 'block';
+          } else {
+            scrollToTopButton.style.display = 'none';
+          }
+        });
+      };
+    </script>
     <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
     <link rel="icon" href="./favicon.png" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -18,82 +38,6 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       crossorigin="anonymous"
     />
-    <style>
-      .developer-card__image img {
-        width: 100%;
-        height: auto;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-
-      .developer-card {
-        background-color: #f4f4f4;
-        border-radius: 8px;
-        padding: 16px;
-        margin-bottom: 16px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-
-      .developer-card__content {
-        text-align: center;
-      }
-
-      .developer-card h3 {
-        font-size: 18px;
-        margin-bottom: 8px;
-      }
-
-      .developer-card p {
-        font-size: 14px;
-        color: #888;
-      }
-
-      @media (min-width: 768px) {
-        .developer-card {
-          display: inline-block;
-          width: calc(22.33% - 16px);
-          margin-right: 8px;
-          margin-left: 8px;
-        }
-      }
-
-      /* CSS untuk tampilan pencarian */
-      .search-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-      }
-
-      .search-input {
-        width: 400px;
-        padding: 12px;
-        font-size: 18px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-      }
-
-      .search-button {
-        margin-left: 10px;
-        padding: 12px 20px;
-        font-size: 18px;
-        background-color: #db0000;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      .search-button:hover {
-        background-color: #b70000;
-      }
-      .search-message {
-        text-align: center;
-        margin-top: 20px;
-        font-weight: bold;
-        transition: opacity 0.5s ease;
-      }
-    </style>
     <title>Yonds Foods</title>
   </head>
   <body>
@@ -147,5 +91,8 @@
         <p tabindex="0">© 2023 Copyright ResepKu - Dicoding Capstone</p>
       </div>
     </footer>
+    <button id="scrollToTopButton" class="scroll-to-top-button">
+      <i class="fa fa-arrow-up"></i>
+    </button>
   </body>
 </html>
