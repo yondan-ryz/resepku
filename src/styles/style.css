@@ -3,7 +3,6 @@
 * {
   padding: 0;
   margin: 0;
-  transition: all 0.3s ease;
 }
 
 body {
@@ -134,7 +133,7 @@ main {
 }
 
 .content .content__heading {
-  margin-top: 15%;
+  margin-top: 15px;
   font-weight: bolder;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -322,7 +321,7 @@ footer p a {
   font-size: 16px;
   color: #ffffff;
   cursor: pointer;
-  transition: .15s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .btn:hover {
@@ -674,7 +673,7 @@ iframe {
   text-align: center;
   margin-top: 20px;
   font-weight: bold;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.3s ease;
 }
 
 .scroll-to-top-button {
@@ -701,7 +700,6 @@ iframe {
 
 .box{
   display: flex;
-  margin: 10px;
   align-items: center;
   min-height: 400px;
   width: 100%;
@@ -741,20 +739,17 @@ display: flex;
 }*/
 #more {display: none;}
 .headline {
-  display: flex;
-	align-items: center;
-	min-height: 330px;
-	width: 100%;
-	text-align: center;
-	background-position: center;
-    padding: 8px;
-    margin: 30px;
-    padding-top: 20px;
-    text-align: justify;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.headline__content {
+  width: 100%; /* Mengisi lebar penuh pada mode smartphone */
+  float: none; /* Menghilangkan float */
+  padding: 16px; /* Menyesuaikan padding */
 }
 
 .headline__figure {
-  width: 600px;
   float: left;
 }
 
@@ -772,11 +767,6 @@ display: flex;
   margin-top: 8px;
 }
 
-.headline__content {
-  width: 350px;
-  float: left;
-  padding: 16px 32px;
-}
 
 .headline__title {
   font-size: 32px;

@@ -37,19 +37,25 @@
     align-items: center;
     min-height: 330px;
     width: 100%;
-    text-align: center;
     background-position: center;
-      padding: 8px;
-      margin: 30px;
-      padding-top: 20px;
-      text-align: justify;
-     
+    text-align: justify;
+
   }
 
   .headline__content {
     width: 600px;
     float: left;
     padding: 1px 32px;
+  }
+
+  .headline__figure {
+    width: 600px;
+    float: left;
+  }
+
+  .headline {
+    padding: 20px;
+    flex-direction: row;
   }
 
 
@@ -186,12 +192,9 @@
     align-items: center;
     min-height: 330px;
     width: 100%;
-    text-align: center;
     background-position: center;
-      padding: 8px;
-      margin: 30px;
-      padding-top: 20px;
-      text-align: justify;
+    text-align: justify;
+    overflow: hidden; /* Atau gunakan "overflow: scroll;" jika ingin menampilkan scrollbars saat overflow */
   }
 
   .headline__content {
@@ -199,6 +202,17 @@
     float: left;
     padding: 1px 32px;
   }
+
+  .headline__figure {
+    width: 600px;
+    float: left;
+  }
+
+  .headline {
+    padding: 20px;
+    flex-direction: row;
+  }
+
 
   .app-bar .app-bar__brand h1 {
     font-size: 2em;
