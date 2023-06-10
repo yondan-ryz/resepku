@@ -100,24 +100,24 @@ body {
 
 .hero__inner {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 100%;
 }
 
 .hero__title {
-  color: #fff;
-  font-weight: 500;
-  font-size: 34px;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+  color: #634423;
+	font-weight: 700;
+	font-size: 29px;
+	text-shadow: 1px 1px #141414
 }
 
 .hero__tagline {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.2);
-  margin-top: 16px;
-  font-size: 18px;
-  font-weight: 300;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
+  color: #634423;
+	margin-top: 3px;
+	font-size: 18px;
+	font-weight: 600;
+	font-style: oblique;
+	text-shadow: 1px 1px #141414
+
 }
 
 /*
@@ -134,11 +134,12 @@ main {
 }
 
 .content .content__heading {
+  margin-top: 15%;
   font-weight: bolder;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  text-decoration: underline;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  color: #634423;
 }
 
 .detailFood {
@@ -644,6 +645,7 @@ iframe {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 25px;
 }
 
 .search-input {
@@ -737,7 +739,7 @@ display: flex;
   margin: 30px;
   padding-top: 20px;
 }*/
-
+#more {display: none;}
 .headline {
   display: flex;
 	align-items: center;

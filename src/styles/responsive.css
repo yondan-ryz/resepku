@@ -1,7 +1,7 @@
 @media screen and (min-width: 400px) {
   h4{
     position: absolute;
-    color: #a5723a;
+    color: #634423;
     font-weight: 700;
     font-size: 15px;
     text-shadow: 1px 1px #141414
@@ -18,7 +18,7 @@
 @media screen and (min-width: 650px) {
   h4{
     position: absolute;
-    color: #a5723a;
+    color: #634423;
     font-weight: 700;
     font-size: 20px;
     text-shadow: 1px 1px #141414
