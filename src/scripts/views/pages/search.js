@@ -25,8 +25,8 @@ const ListFood = {
     return `
     <div class="hero">
     <div class="hero__inner">
-      <h1 class="hero__title">HEAD</h1>
-      <p class="hero__tagline">HALO DANI</p>
+      <h1 class="hero__title">Welcome to ResepKU</h1>
+      <p class="hero__tagline">"provide your comfort in finding the best taste"</p>
     </div>
   </div>
 
@@ -54,7 +54,9 @@ const ListFood = {
 </div>
 
       <div class="content">
-        <h2 class="content__heading">List Food</h2>
+      <div class="content__heading"> <h1>Find Your Resep Today</h1>
+      <h3>Happy Cooking!</h3></div>
+
             <div class="hr-thin"></div>
         <div class="search-container">
           <input type="text" id="searchInput" class="search-input" placeholder="Search Foods">
