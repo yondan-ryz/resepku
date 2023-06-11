@@ -56,6 +56,8 @@ const ListFood = {
       <div class="content">
       <div class="content__heading"> <h1>Find Your Resep Today</h1>
       <h3>Happy Cooking!</h3></div>
+
+            <div class="hr-thin"></div>
         <div class="search-container">
           <input type="text" id="searchInput" class="search-input" placeholder="Search Foods">
           <button id="searchButton" class="search-button">Cari</button>
