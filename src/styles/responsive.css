@@ -7,6 +7,7 @@
     text-shadow: 1px 1px #141414
   }
   .atasKiri{
+    font-size: medium;
     left: 40%;
       top: 44%;
       transform: translate(-50%);
@@ -24,6 +25,7 @@
     text-shadow: 1px 1px #141414
   }
   .atasKiri{
+    font-size: x-large;
     left: 40%;
       top: 45%;
       transform: translate(-50%);
@@ -131,6 +133,8 @@
 
   .foods {
     grid-template-columns: 1fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .food {
@@ -150,6 +154,8 @@
 
   .devs {
     grid-template-columns: 1fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .dev {
@@ -184,7 +190,24 @@
   .skip-link:focus {
     top: 0;
   }
+
+  .scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: none;
+    width: 60px;
+    height: 60px;
+    background-color: #db0000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
 }
+
 
 @media screen and (min-width: 800px) {
   .headline {
@@ -194,7 +217,7 @@
     width: 100%;
     background-position: center;
     text-align: justify;
-    overflow: hidden; /* Atau gunakan "overflow: scroll;" jika ingin menampilkan scrollbars saat overflow */
+    overflow: hidden;
   }
 
   .headline__content {
@@ -237,34 +260,56 @@
   .detail-item .detail-item__content {
     padding: 20px;
   }
+
+  .atasKiri{
+    font-size: xx-large;
+    left: 40%;
+    top: 44%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+  }
 }
 
 @media screen and (min-width: 850px) {
   .foods {
     grid-template-columns: repeat(3, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .devs {
     grid-template-columns: repeat(4, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .foods {
     grid-template-columns: repeat(4, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .devs {
     grid-template-columns: repeat(4, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .foods {
     grid-template-columns: repeat(5, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .devs {
     grid-template-columns: repeat(5, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

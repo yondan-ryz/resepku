@@ -33,7 +33,7 @@ const ListFood = {
   <div class="content"> 
   <article class="headline">
   <figure class="headline__figure">
-    <img src="images/heros/headline.jpg" alt="Dicoding Fact Sheet">
+    <img src="images/headline.png" alt="Dicoding Fact Sheet">
   </figure>
   <div class="headline__content">
   <h2>Artikel</h2>
@@ -49,7 +49,7 @@ const ListFood = {
 </div>
 
 <div class="box">
-<img src="images/heros/fish.jpg">
+<img src="images/fish.png">
 <h4 class="atasKiri">You Can Find Cooking Ideas Every Day With The Best Selection of Recipes</h4>
 </div>
 
@@ -83,7 +83,6 @@ const ListFood = {
         });
       }
 
-      // Hapus pesan "Makanan tidak ditemukan" jika ada
       if (searchMessage) {
         searchMessage.innerHTML = '';
       }
@@ -123,7 +122,7 @@ const ListFood = {
       }
     });
 
-    renderFoods([]); // Tampilkan daftar kosong saat halaman dibuka
+    renderFoods([]);
   },
 };
 

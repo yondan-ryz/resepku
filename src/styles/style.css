@@ -202,6 +202,8 @@ main {
   grid-template-columns: 1fr;
   gap: 16px;
   margin: 32px 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .food-item {
@@ -463,7 +465,7 @@ ul{
 	background-color: #770000;
 }
 
-/*responsive*/
+/*responsive footer*/
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
@@ -476,15 +478,13 @@ ul{
 }
 }
 
-
-
-
-
 .devs {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
   margin: 32px 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .dev-item {
@@ -584,13 +584,13 @@ ul{
 }
 
 iframe {
-  width: 100%; /* Untuk layar kecil */
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   iframe {
-    width: 50%; /* Untuk layar desktop */
-    margin: 0 auto; /* Mengatur posisi horizontal menjadi tengah (justify center) */
+    width: 50%;
+    margin: 0 auto;
   }
 }
 
@@ -638,7 +638,6 @@ iframe {
   }
 }
 
-/* CSS untuk tampilan pencarian */
 .search-container {
   display: flex;
   justify-content: center;
@@ -682,8 +681,8 @@ iframe {
   right: 20px;
   z-index: 999;
   display: none;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-color: #db0000;
   color: #fff;
   border: none;
@@ -719,6 +718,7 @@ h4{
 	text-shadow: 1px 1px #141414
 }
 .atasKiri{
+  font-size: small;
   left: 40%;
     top: 45%;
     transform: translate(-50%);
@@ -730,13 +730,6 @@ h4{
  * headline
  */
 
-/* .headline {
-display: flex;
-  width: 100%;
-  padding: 8px;
-  margin: 30px;
-  padding-top: 20px;
-}*/
 #more {display: none;}
 .headline {
   padding: 20px;
@@ -744,9 +737,9 @@ display: flex;
 }
 
 .headline__content {
-  width: 100%; /* Mengisi lebar penuh pada mode smartphone */
-  float: none; /* Menghilangkan float */
-  padding: 16px; /* Menyesuaikan padding */
+  width: 100%;
+  float: none;
+  padding: 16px;
 }
 
 .headline__figure {
