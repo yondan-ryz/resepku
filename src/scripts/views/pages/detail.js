@@ -21,7 +21,6 @@ const DetailFood = {
       const foodDetail = responseJson.meals[0];
 
       if (foodDetail) {
-        // Menampilkan elemen detail-item
         /* eslint-disable no-use-before-define */
         foodDetailContainer.innerHTML = `
           <div class="detail-item">
@@ -33,9 +32,9 @@ const DetailFood = {
             <div class="hr-line"></div>
             <div class="detail-item__content">
               <br>
-              <h3>Intruksi:</h3>
+              <h3>instructions:</h3>
               <p>${foodDetail.strInstructions}</p>
-              <h3>Resep:</h3>
+              <h3>Receipt:</h3>
               <p>${foodDetail.strIngredient1}</p>
               <p>${foodDetail.strIngredient2}</p>
               <p>${foodDetail.strIngredient3}</p>
