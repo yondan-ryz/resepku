@@ -183,6 +183,13 @@ main {
   border-radius: 20px;
 }
 
+.detail-item .detail-item__header .detail-item__error__image {
+  width: 80%;
+  padding: 50px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
 .detail-item .detail-item__content {
   padding: 3px;
 }

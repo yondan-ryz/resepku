@@ -108,7 +108,7 @@ const ListFood = {
         } catch (error) {
           console.error(error);
           // eslint-disable-next-line no-useless-concat
-          searchMessage.innerHTML = 'Tidak bisa memuat data' + '<br><img class="image-notfound" src="./images/errorsearch.png" alt="">';
+          searchMessage.innerHTML = 'Tidak bisa memuat data' + '<br><img class="image-notfound" src="./images/error.png" alt="">';
         }
       } else {
         searchMessage.innerHTML = 'Masukan kata kunci terlebih dahulu';

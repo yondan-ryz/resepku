@@ -24,7 +24,7 @@ const DetailFood = {
         /* eslint-disable no-use-before-define */
         foodDetailContainer.innerHTML = `
           <div class="detail-item">
-                        <h3 class="detail-item__title">${foodDetail.strMeal}</h3>
+                        <h2 class="content__heading">${foodDetail.strMeal}</h2>
                         <div class="hr-thin"></div>
             <div class="detail-item__header">
               <img class="detail-item__header__poster" src="${foodDetail.strMealThumb}" alt="${foodDetail.strMeal}">
@@ -137,7 +137,15 @@ const DetailFood = {
       }
     } catch (error) {
       console.log('Error:', error);
-      foodDetailContainer.innerHTML = '<p>Terjadi kesalahan saat memuat data.</p>';
+      foodDetailContainer.innerHTML = `
+      <div class="detail-item">
+                        <h2 class="content__heading">Tidak bisa menampilkan detail</h2>
+                        <div class="hr-thin"></div>
+            <div class="detail-item__header">
+              <img class="detail-item__error__image" src="./images/error.png" alt="error">
+            </div>
+
+          </div>`;
     }
   },
 };
