@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#DB0000" />
+    <title>ResepKu</title>
+    <script>
+      window.onload = function () {
+        const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+        scrollToTopButton.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+        window.addEventListener("scroll", function () {
+          if (window.pageYOffset > 200) {
+            scrollToTopButton.style.display = "block";
+          } else {
+            scrollToTopButton.style.display = "none";
+          }
+        });
+      };
+    </script>
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <link rel="icon" href="./favicon.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="./app.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <style>
+      .developer-card__image img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .developer-card {
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .developer-card__content {
+        text-align: center;
+      }
+
+      .developer-card h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+
+      .developer-card p {
+        font-size: 14px;
+        color: #888;
+      }
+
+      @media (min-width: 768px) {
+        .developer-card {
+          display: inline-block;
+          width: calc(22.33% - 16px);
+          margin-right: 8px;
+          margin-left: 8px;
+        }
+      }
+      /* CSS untuk tampilan pencarian */
+
+      .search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .search-input {
+        width: 400px;
+        padding: 12px;
+        font-size: 18px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .search-button {
+        margin-left: 10px;
+        padding: 12px 20px;
+        font-size: 18px;
+        background-color: #db0000;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .search-button:hover {
+        background-color: #b70000;
+      }
+
+      .search-message {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    </style>
+    <title>Yonds Foods</title>
+  </head>
+
+  <body>
+    <a href="#mainContent" class="skip-link">Menuju ke konten</a>
+    <header class="app-bar">
+      <div class="app-bar__menu">
+        <button id="hamburgerButton">☰</button>
+      </div>
+      <div class="app-bar__brand">
+        <img src="./images/logo.png" id="img-logo" alt="logo" />
+      </div>
+      <nav id="navigationDrawer" class="app-bar__navigation">
+        <ul>
+          <li><a href="#/home">Home</a></li>
+          <li><a href="#/about-us">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="hero__inner">
+        <h1 class="hero__title">Selamat Datang di ResepKu</h1>
+        <p class="hero__tagline">
+          Sumber Inspirasi Makanan yang Menggugah Selera!
+        </p>
+      </div>
+    </div>
+    <main tabindex="0" id="mainContent"></main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://facebook.com/yonathan.sullivan.1" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com/yonathan_danii" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/yonathan_dani/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/yonathan-dani-kristiawan-a584b2253"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="/#/home/">Home</a></li>
+              <li><a href="/#/about-us/">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button id="scrollToTopButton" class="scroll-to-top-button">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
