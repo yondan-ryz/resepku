@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 * {
   padding: 0;
   margin: 0;
@@ -159,6 +158,8 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .detail-item {
@@ -192,6 +193,21 @@ main {
   font-size: x-large;
   color: #24262b;
   margin-bottom: 20px;
+}
+
+table {
+  border-style: solid;
+  border-color: #24262b;
+  width: 100%;
+}
+
+
+table tr:nth-child(even) {
+  background-color: #cecece;
+}
+
+table td {
+  padding-left: 5px;
 }
 
 .detail-item .detail-item__content h3 {
@@ -643,8 +659,10 @@ iframe {
 }
 
 .search-button:hover {
+  transform: translateY(-2px);
   background-color: #454545;
 }
+
 .search-message {
   text-align: center;
   margin-top: 20px;
@@ -770,4 +788,11 @@ h4{
 
 .headline__button:hover {
   background-color: #454545;
+}
+
+.no-copy {
+  -webkit-user-select: none; /* Untuk browser WebKit (Chrome, Safari, Opera) */
+  -moz-user-select: none; /* Untuk browser Firefox */
+  -ms-user-select: none; /* Untuk browser Internet Explorer */
+  user-select: none; /* Standar yang didukung oleh mayoritas browser */
 }

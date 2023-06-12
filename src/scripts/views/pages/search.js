@@ -60,7 +60,7 @@ const ListFood = {
             <div class="hr-thin"></div>
         <div class="search-container">
           <input type="text" id="searchInput" class="search-input" placeholder="Search Foods">
-          <button id="searchButton" class="search-button">Cari</button>
+          <button id="searchButton" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
         </div>
         <div id="searchMessage" class="search-message"></div>
         <div id="foods" class="foods"></div>  

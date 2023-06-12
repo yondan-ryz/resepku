@@ -276,6 +276,12 @@
     -moz-transform: translate(-50%);
     -o-transform: translate(-50%);
   }
+
+  table {
+    border-style: solid;
+    border-color: #24262b;
+    width: 40%;
+  }
 }
 
 @media screen and (min-width: 850px) {
