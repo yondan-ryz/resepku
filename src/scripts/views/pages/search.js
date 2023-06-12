@@ -23,12 +23,44 @@ const createFoodItemTemplate = (food) => `
 const ListFood = {
   async render() {
     return `
+    <div class="hero">
+    <div class="hero__inner">
+      <h1 class="hero__title">Welcome to ResepKU</h1>
+      <p class="hero__tagline">"provide your comfort in finding the best taste"</p>
+    </div>
+  </div>
+
+  <div class="content"> 
+  <article class="headline">
+  <figure class="headline__figure">
+    <img src="images/headline.png" alt="Dicoding Fact Sheet">
+  </figure>
+  <div class="headline__content">
+  <h2>Article</h2>
+  <p>Kami adalah sebuah platform online yang menyediakan kumpulan resep makanan yang beragam dan menginspirasi. Kami percaya bahwa memasak adalah
+   seni yang menyenangkan dan bisa dinikmati oleh siapa pun, baik pemula maupun ahli masak.<span id="dots">...</span><span id="more">Kami selalu berusaha untuk menjaga kualitas resep yang kami tampilkan. Tim kami bekerja sama dengan para ahli masak untuk memastikan setiap resep diuji dan dikurasi dengan cermat. Kami juga selalu terbuka untuk menerima sumbangan resep dari pengguna kami,
+    sehingga kita dapat saling berbagi pengetahuan dan pengalaman dalam dunia memasak.
+   Terima kasih telah bergabung dengan kami di [Nama Website]. Kami berharap Anda menemukan inspirasi dan kesenangan dalam mengeksplorasi resep-resep yang kami sajikan.
+   Mulailah petualangan kuliner Anda sekarang dan jadilah koki di dapur Anda sendiri!</span></p>
+  <button onclick="myFunction()" id="myBtn" class="headline__button">Read more</button>
+  
+  </div>
+</article>
+</div>
+
+<div class="box">
+<img src="images/fish.png">
+<h4 class="atasKiri">You Can Find Cooking Ideas Every Day With The Best Selection of Recipes</h4>
+</div>
+
       <div class="content">
-        <h2 class="content__heading">List Food</h2>
+      <div class="content__heading"> <h1>Find Your Resep Today</h1>
+      <h3>Happy Cooking!</h3></div>
+
             <div class="hr-thin"></div>
         <div class="search-container">
           <input type="text" id="searchInput" class="search-input" placeholder="Search Foods">
-          <button id="searchButton" class="search-button">Cari</button>
+          <button id="searchButton" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
         </div>
         <div id="searchMessage" class="search-message"></div>
         <div id="foods" class="foods"></div>  
@@ -53,7 +85,6 @@ const ListFood = {
         });
       }
 
-      // Hapus pesan "Makanan tidak ditemukan" jika ada
       if (searchMessage) {
         searchMessage.innerHTML = '';
       }
@@ -77,7 +108,7 @@ const ListFood = {
         } catch (error) {
           console.error(error);
           // eslint-disable-next-line no-useless-concat
-          searchMessage.innerHTML = 'Tidak bisa memuat data' + '<br><img class="image-notfound" src="./images/errorsearch.png" alt="">';
+          searchMessage.innerHTML = 'Tidak bisa memuat data' + '<br><img class="image-notfound" src="./images/error.png" alt="">';
         }
       } else {
         searchMessage.innerHTML = 'Masukan kata kunci terlebih dahulu';
@@ -93,7 +124,7 @@ const ListFood = {
       }
     });
 
-    renderFoods([]); // Tampilkan daftar kosong saat halaman dibuka
+    renderFoods([]);
   },
 };
 

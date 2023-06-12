@@ -21,10 +21,10 @@ const DetailFood = {
       const foodDetail = responseJson.meals[0];
 
       if (foodDetail) {
-        // Menampilkan elemen detail-item
         /* eslint-disable no-use-before-define */
         foodDetailContainer.innerHTML = `
           <div class="detail-item">
+<<<<<<< HEAD
               <h3 class="detail-item__title">Detail Food</h3>
               <div class="hr-thin"></div>
             <div class="detail-item__header">
@@ -38,6 +38,20 @@ const DetailFood = {
                   </div>
                   <h2>Resep</h2>
                   <table class="resep">
+=======
+                        <h2 class="content__heading">${foodDetail.strMeal}</h2>
+                        <div class="hr-thin"></div>
+            <div class="detail-item__header">
+              <img class="detail-item__header__poster" src="${foodDetail.strMealThumb}" alt="${foodDetail.strMeal}">
+            </div>
+            <div class="hr-line"></div>
+            <div class="detail-item__content">
+              <br>
+              <h3>instructions:</h3>
+              <p>${foodDetail.strInstructions}</p>
+              <h3>Receipt:</h3>
+              <table class="resep">
+>>>>>>> 6a612fce676ada434d1c84bebc761c0e0050c852
                       <tbody>
                         <tr>
                           <td>${foodDetail.strIngredient1}</td>
@@ -121,12 +135,21 @@ const DetailFood = {
                         </tr>
                       </tbody>
                   </table>
+<<<<<<< HEAD
               </div>
           </div>
           <div class="hr-line"></div>
           <div class="detail-item__content">
             <h3>Intruksi</h3>
             <p>${foodDetail.strInstructions}</p>
+=======
+              <h3>Category</h3>
+              <p>${foodDetail.strCategory}</p>
+              <h3>Area:</h3>
+              <p>${foodDetail.strArea}</p>
+              <h3>Tag:</h3>
+              <p>${foodDetail.strTags}</p>
+>>>>>>> 6a612fce676ada434d1c84bebc761c0e0050c852
               
             <h3>Video Youtube</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/${getYouTubeVideoId(foodDetail.strYoutube)}" frameborder="0" allowfullscreen></iframe>
@@ -138,7 +161,15 @@ const DetailFood = {
       }
     } catch (error) {
       console.log('Error:', error);
-      foodDetailContainer.innerHTML = '<p>Terjadi kesalahan saat memuat data.</p>';
+      foodDetailContainer.innerHTML = `
+      <div class="detail-item">
+                        <h2 class="content__heading">Tidak bisa menampilkan detail</h2>
+                        <div class="hr-thin"></div>
+            <div class="detail-item__header">
+              <img class="detail-item__error__image" src="./images/error.png" alt="error">
+            </div>
+
+          </div>`;
     }
   },
 };
