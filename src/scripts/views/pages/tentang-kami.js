@@ -30,10 +30,10 @@ const AboutUs = {
 
   generateDeveloperItems() {
     const developers = [
-      { name: 'Yonathan Dani Kristiawan', photo: './images/dev/yonathan.png', university: 'Universitas Kristen Immanuel' },
-      { name: 'Katralin', photo: './images/dev/yonathan.png', university: 'Developer' },
-      { name: 'Abdul Majid Musthofa', photo: './images/dev/yonathan.png', university: 'Developer' },
-      { name: 'Natan Enggal Swasono', photo: './images/dev/yonathan.png', university: 'Universitas Kristen Immanuel' },
+      { name: 'Yonathan Dani Kristiawan', photo: './images/dev/yonathan.png', university: 'Universitas Kristen Immanuel Yogyakarta' },
+      { name: 'Katralin', photo: './images/dev/yonathan1.png', university: 'Developer' },
+      { name: 'Abdul Majid Musthofa', photo: './images/dev/majid.png', university: 'Universitas Islam Sultan Agung Semarang' },
+      { name: 'Natan Enggal Swasono', photo: './images/dev/natan.png', university: 'Universitas Kristen Immanuel Yogyakarta' },
     ];
 
     let developerItems = '';
