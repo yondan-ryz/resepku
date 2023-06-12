@@ -208,11 +208,11 @@
         height: 400px;
         object-fit: scale-down;
     } */
-    .detail-item .detail-item__header .detail-item__error__image {
-        width: 35%;
-        height: 400px;
-        object-fit: scale-down;
-    }
+   /*.detail-item__error__image {*/
+   /*     width: 35%;*/
+   /*     height: 400px;*/
+   /*     object-fit: scale-down;*/
+   /* }*/
     .hero {
         display: flex;
         align-items: center;

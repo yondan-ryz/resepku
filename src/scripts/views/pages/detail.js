@@ -141,10 +141,6 @@ const DetailFood = {
       <div class="detail-item">
                         <h2 class="content__heading">Tidak bisa menampilkan detail</h2>
                         <div class="hr-thin"></div>
-            <div class="detail-item__header">
-              <img class="detail-item__error__image" src="./images/error.png" alt="error">
-            </div>
-
           </div>`;
     }
   },
