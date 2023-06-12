@@ -25,47 +25,111 @@ const DetailFood = {
         /* eslint-disable no-use-before-define */
         foodDetailContainer.innerHTML = `
           <div class="detail-item">
-                        <h3 class="detail-item__title">${foodDetail.strMeal}</h3>
-                        <div class="hr-thin"></div>
+              <h3 class="detail-item__title">Detail Food</h3>
+              <div class="hr-thin"></div>
             <div class="detail-item__header">
               <img class="detail-item__header__poster" src="${foodDetail.strMealThumb}" alt="${foodDetail.strMeal}">
-            </div>
-            <div class="hr-line"></div>
-            <div class="detail-item__content">
-              <br>
-              <h3>Intruksi:</h3>
-              <p>${foodDetail.strInstructions}</p>
-              <h3>Resep:</h3>
-              <p>${foodDetail.strIngredient1}</p>
-              <p>${foodDetail.strIngredient2}</p>
-              <p>${foodDetail.strIngredient3}</p>
-              <p>${foodDetail.strIngredient4}</p>
-              <p>${foodDetail.strIngredient5}</p>
-              <p>${foodDetail.strIngredient6}</p>
-              <p>${foodDetail.strIngredient7}</p>
-              <p>${foodDetail.strIngredient8}</p>
-              <p>${foodDetail.strIngredient9}</p>
-              <p>${foodDetail.strIngredient10}</p>
-              <p>${foodDetail.strIngredient11}</p>
-              <p>${foodDetail.strIngredient12}</p>
-              <p>${foodDetail.strIngredient13}</p>
-              <p>${foodDetail.strIngredient14}</p>
-              <p>${foodDetail.strIngredient15}</p>
-              <p>${foodDetail.strIngredient16}</p>
-              <p>${foodDetail.strIngredient17}</p>
-              <p>${foodDetail.strIngredient18}</p>
-              <p>${foodDetail.strIngredient19}</p>
-              <p>${foodDetail.strIngredient20}</p>
-              <h3>Category</h3>
-              <p>${foodDetail.strCategory}</p>
-              <h3>Area:</h3>
-              <p>${foodDetail.strArea}</p>
-              <h3>Tag:</h3>
-              <p>${foodDetail.strTags}</p>
+              <div class="detail-info">
+                  <h1>${foodDetail.strMeal}</h1>
+                  <div class="detail-tag">
+                    <h3 class="category">${foodDetail.strCategory}</h3>
+                    <h3 class="area">${foodDetail.strArea}</h3>
+                    <h3 class="tag">${foodDetail.strTags}</h3>
+                  </div>
+                  <h2>Resep</h2>
+                  <table class="resep">
+                      <tbody>
+                        <tr>
+                          <td>${foodDetail.strIngredient1}</td>
+                          <td>${foodDetail.strMeasure1}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient2}</td>
+                          <td>${foodDetail.strMeasure2}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient3}</td>
+                          <td>${foodDetail.strMeasure3}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient4}</td>
+                          <td>${foodDetail.strMeasure4}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient5}</td>
+                          <td>${foodDetail.strMeasure5}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient6}</td>
+                          <td>${foodDetail.strMeasure6}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient7}</td>
+                          <td>${foodDetail.strMeasure7}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient8}</td>
+                          <td>${foodDetail.strMeasure8}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient9}</td>
+                          <td>${foodDetail.strMeasure9}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient10}</td>
+                          <td>${foodDetail.strMeasure10}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient11}</td>
+                          <td>${foodDetail.strMeasure11}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient12}</td>
+                          <td>${foodDetail.strMeasure12}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient13}</td>
+                          <td>${foodDetail.strMeasure13}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient14}</td>
+                          <td>${foodDetail.strMeasure14}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient15}</td>
+                          <td>${foodDetail.strMeasure15}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient16}</td>
+                          <td>${foodDetail.strMeasure16}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient17}</td>
+                          <td>${foodDetail.strMeasure17}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient18}</td>
+                          <td>${foodDetail.strMeasure18}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient19}</td>
+                          <td>${foodDetail.strMeasure19}</td>
+                        </tr>
+                        <tr>
+                          <td>${foodDetail.strIngredient20}</td>
+                          <td>${foodDetail.strMeasure20}</td>
+                        </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+          <div class="hr-line"></div>
+          <div class="detail-item__content">
+            <h3>Intruksi</h3>
+            <p>${foodDetail.strInstructions}</p>
               
-              <h3>Video Youtube:</h3>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/${getYouTubeVideoId(foodDetail.strYoutube)}" frameborder="0" allowfullscreen></iframe>
-            </div>
+            <h3>Video Youtube</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/${getYouTubeVideoId(foodDetail.strYoutube)}" frameborder="0" allowfullscreen></iframe>
           </div>
         `;
       } else {
