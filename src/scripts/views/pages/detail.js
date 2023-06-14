@@ -8,7 +8,8 @@ const DetailFood = {
   },
 
   async afterRender() {
-    const url = window.location.hash.slice(1).toLowerCase();
+    const url = window.location.hash.slice(1)
+      .toLowerCase();
     const urlParams = url.split('/');
     const detailId = urlParams[2];
 
@@ -24,19 +25,26 @@ const DetailFood = {
         /* eslint-disable no-use-before-define */
         foodDetailContainer.innerHTML = `
           <div class="detail-item">
-              <h3 class="detail-item__title">Detail Food</h3>
-              <div class="hr-thin"></div>
+                        <h2 class="content__heading">${foodDetail.strMeal}</h2>
+                        <div class="hr-thin"></div>
             <div class="detail-item__header">
-              <img class="detail-item__header__poster" src="${foodDetail.strMealThumb}" alt="${foodDetail.strMeal}">
-              <div class="detail-info">
-                  <h2 class="title">${foodDetail.strMeal}</h2>
-                  <div class="detail-tag">
-                    <h3 class="category">${foodDetail.strCategory}</h3>
-                    <h3 class="area">${foodDetail.strArea}</h3>
-                    <h3 class="tag">${foodDetail.strTags}</h3>
-                  </div>
-                  <h2 class="resep">Resep</h2>
-                  <table>
+            <div class="container-detail clearfix">
+    <div class="column">
+     <img class="detail-item__header__poster" src="${foodDetail.strMealThumb}" alt="${foodDetail.strMeal}">
+      <div class="hr-line-unhide"></div>
+    </div>
+    <div class="column">
+     <div class="">
+              <h3>Category:</h3>
+              <p>${foodDetail.strCategory}</p>
+              <h3>Area:</h3>
+              <p>${foodDetail.strArea}</p>
+              <h3>Tag:</h3>
+              <p>${foodDetail.strTags}</p>
+            </div>
+            <div class="hr-line"></div>
+              <h3>Receipt:</h3>
+              <table class="resep">
                       <tbody>
                         <tr>
                           <td>${foodDetail.strIngredient1}</td>
@@ -120,15 +128,18 @@ const DetailFood = {
                         </tr>
                       </tbody>
                   </table>
-              </div>
-          </div>
-          <div class="hr-line"></div>
-          <div class="detail-item__content">
-            <h3>Intruksi</h3>
-            <p>${foodDetail.strInstructions}</p>
-              
-            <h3>Video Youtube</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/${getYouTubeVideoId(foodDetail.strYoutube)}" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+             
+            </div>
+            <div class="hr-line"></div>
+            <div class="detail-item__content">
+              <br>
+              <h3>instructions:</h3>
+              <p>${foodDetail.strInstructions}</p>
+              <h3>Video Youtube:</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/${getYouTubeVideoId(foodDetail.strYoutube)}" frameborder="0" allowfullscreen></iframe>
+            </div>
           </div>
         `;
       } else {
@@ -141,6 +152,10 @@ const DetailFood = {
       <div class="detail-item">
                         <h2 class="content__heading">Tidak bisa menampilkan detail</h2>
                         <div class="hr-thin"></div>
+            <div class="detail-item__header">
+              <img class="detail-item__error__image" src="./images/error.png" alt="error">
+            </div>
+
           </div>`;
     }
   },
