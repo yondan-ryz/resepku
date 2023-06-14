@@ -8,7 +8,8 @@ const DetailFood = {
   },
 
   async afterRender() {
-    const url = window.location.hash.slice(1).toLowerCase();
+    const url = window.location.hash.slice(1)
+      .toLowerCase();
     const urlParams = url.split('/');
     const detailId = urlParams[2];
 
@@ -27,13 +28,12 @@ const DetailFood = {
                         <h2 class="content__heading">${foodDetail.strMeal}</h2>
                         <div class="hr-thin"></div>
             <div class="detail-item__header">
-              <img class="detail-item__header__poster" src="${foodDetail.strMealThumb}" alt="${foodDetail.strMeal}">
-            </div>
-            <div class="hr-line"></div>
-            <div class="detail-item__content">
-              <br>
-              <h3>instructions:</h3>
-              <p>${foodDetail.strInstructions}</p>
+            <div class="container-detail clearfix">
+    <div class="column"">
+     <img class="detail-item__header__poster" src="${foodDetail.strMealThumb}" alt="${foodDetail.strMeal}">
+      <div class="hr-line-unhide"></div>
+    </div>
+    <div class="column">
               <h3>Receipt:</h3>
               <table class="resep">
                       <tbody>
@@ -119,6 +119,15 @@ const DetailFood = {
                         </tr>
                       </tbody>
                   </table>
+    </div>
+  </div>
+             
+            </div>
+            <div class="hr-line"></div>
+            <div class="detail-item__content">
+              <br>
+              <h3>instructions:</h3>
+              <p>${foodDetail.strInstructions}</p>
               <h3>Category</h3>
               <p>${foodDetail.strCategory}</p>
               <h3>Area:</h3>

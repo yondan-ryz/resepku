@@ -206,6 +206,13 @@
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
+  .hr-line-unhide{
+    display: none;
+    height: 2px;
+    background-color: #454545;
+    border: none;
+    margin: 20px 0;
+  }
 }
 
 
@@ -242,8 +249,7 @@
   }
 
   .detail-item .detail-item__header .detail-item__header__poster {
-    width: 35%;
-    height: 400px;
+    width: 100%;
     object-fit: scale-down;
   }
 
@@ -284,10 +290,16 @@
     -o-transform: translate(-50%);
   }
 
+  .column {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
   table {
     border-style: solid;
     border-color: #24262b;
-    width: 40%;
+    width: 100%;
   }
 }
 
