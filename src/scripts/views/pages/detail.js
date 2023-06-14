@@ -29,11 +29,20 @@ const DetailFood = {
                         <div class="hr-thin"></div>
             <div class="detail-item__header">
             <div class="container-detail clearfix">
-    <div class="column"">
+    <div class="column">
      <img class="detail-item__header__poster" src="${foodDetail.strMealThumb}" alt="${foodDetail.strMeal}">
       <div class="hr-line-unhide"></div>
     </div>
     <div class="column">
+     <div class="">
+              <h3>Category:</h3>
+              <p>${foodDetail.strCategory}</p>
+              <h3>Area:</h3>
+              <p>${foodDetail.strArea}</p>
+              <h3>Tag:</h3>
+              <p>${foodDetail.strTags}</p>
+            </div>
+            <div class="hr-line"></div>
               <h3>Receipt:</h3>
               <table class="resep">
                       <tbody>
@@ -128,13 +137,6 @@ const DetailFood = {
               <br>
               <h3>instructions:</h3>
               <p>${foodDetail.strInstructions}</p>
-              <h3>Category</h3>
-              <p>${foodDetail.strCategory}</p>
-              <h3>Area:</h3>
-              <p>${foodDetail.strArea}</p>
-              <h3>Tag:</h3>
-              <p>${foodDetail.strTags}</p>
-              
               <h3>Video Youtube:</h3>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/${getYouTubeVideoId(foodDetail.strYoutube)}" frameborder="0" allowfullscreen></iframe>
             </div>

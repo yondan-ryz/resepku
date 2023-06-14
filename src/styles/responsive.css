@@ -257,6 +257,7 @@
     width: 35%;
     height: 400px;
     object-fit: scale-down;
+    background-color: aliceblue;
   }
 
   .hero {

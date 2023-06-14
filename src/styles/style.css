@@ -187,6 +187,7 @@ main {
   padding: 50px;
   object-fit: cover;
   border-radius: 20px;
+  background-color: aliceblue;
 }
 
 .detail-item .detail-item__content {
@@ -217,13 +218,15 @@ table td {
 }
 
 .detail-item .detail-item__header div div h3 {
-  margin: 15px 0 0 0;
-  text-decoration: underline;
+  color: black;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 .detail-item .detail-item__content > h3 {
-  margin: 15px 0 0 0;
-  text-decoration: underline;
+  color: black;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 .detail-item .detail-item__content h3 a {
@@ -233,8 +236,21 @@ table td {
 
 .detail-item .detail-item__content p {
   overflow: hidden;
+  margin-left: 20px;
+  margin-right: 20px;
   text-overflow: ellipsis;
+}
 
+.detail-item div div > p {
+  width: max-content;
+  color: white;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-overflow: ellipsis;
+  padding: 7px;
+  border-radius: 20px;
+  background-color: #614a31;
 }
 
 .foods {
