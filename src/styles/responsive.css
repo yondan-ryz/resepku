@@ -206,13 +206,6 @@
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
-  .hr-line-unhide{
-    display: none;
-    height: 2px;
-    background-color: #454545;
-    border: none;
-    margin: 20px 0;
-  }
 }
 
 
@@ -257,6 +250,7 @@
     width: 35%;
     height: 400px;
     object-fit: scale-down;
+    background-color: aliceblue;
   }
 
   .hero {
@@ -300,6 +294,14 @@
     border-style: solid;
     border-color: #24262b;
     width: 100%;
+  }
+
+  .hr-line-unhide{
+    display: none;
+    height: 2px;
+    background-color: #454545;
+    border: none;
+    margin: 20px 0;
   }
 }
 
