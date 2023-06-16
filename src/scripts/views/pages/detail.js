@@ -143,7 +143,6 @@ const DetailFood = {
           </div>
         `;
       } else {
-        // Menampilkan pesan "Makanan tidak ditemukan"
         foodDetailContainer.innerHTML = '<p>Makanan tidak ditemukan.</p>';
       }
     } catch (error) {

@@ -38,12 +38,11 @@ const ListFood = {
   <div class="headline__content">
   <h2>Article</h2>
   <p>Kami adalah sebuah platform online yang menyediakan kumpulan resep makanan yang beragam dan menginspirasi. Kami percaya bahwa memasak adalah
-   seni yang menyenangkan dan bisa dinikmati oleh siapa pun, baik pemula maupun ahli masak.<span id="dots">...</span><span id="more">Kami selalu berusaha untuk menjaga kualitas resep yang kami tampilkan. Tim kami bekerja sama dengan para ahli masak untuk memastikan setiap resep diuji dan dikurasi dengan cermat. Kami juga selalu terbuka untuk menerima sumbangan resep dari pengguna kami,
+   seni yang menyenangkan dan bisa dinikmati oleh siapa pun, baik pemula maupun ahli masak.<span id="dots">...</span><span id="more"> Kami selalu berusaha untuk menjaga kualitas resep yang kami tampilkan. Tim kami bekerja sama dengan para ahli masak untuk memastikan setiap resep diuji dan dikurasi dengan cermat. Kami juga selalu terbuka untuk menerima sumbangan resep dari pengguna kami,
     sehingga kita dapat saling berbagi pengetahuan dan pengalaman dalam dunia memasak.
-   Terima kasih telah bergabung dengan kami di [Nama Website]. Kami berharap Anda menemukan inspirasi dan kesenangan dalam mengeksplorasi resep-resep yang kami sajikan.
+   Terima kasih telah bergabung dengan kami di Resepku. Kami berharap Anda menemukan inspirasi dan kesenangan dalam mengeksplorasi resep-resep yang kami sajikan.
    Mulailah petualangan kuliner Anda sekarang dan jadilah koki di dapur Anda sendiri!</span></p>
   <button onclick="myFunction()" id="myBtn" class="headline__button">Read more</button>
-  
   </div>
 </article>
 </div>
@@ -52,11 +51,9 @@ const ListFood = {
 <img src="images/fish.png">
 <h4 class="atasKiri">You Can Find Cooking Ideas Every Day With The Best Selection of Recipes</h4>
 </div>
-
       <div class="content">
       <div class="content__heading"> <h1>Find Your Resep Today</h1>
       <h3>Happy Cooking!</h3></div>
-
             <div class="hr-thin"></div>
         <div class="search-container">
           <input type="text" id="searchInput" class="search-input" placeholder="Search Foods">

@@ -831,3 +831,20 @@ h4{
   -ms-user-select: none; /* Untuk browser Internet Explorer */
   user-select: none; /* Standar yang didukung oleh mayoritas browser */
 }
+
+.container-detail {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 100%;
+}
+
+/* Membersihkan float */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

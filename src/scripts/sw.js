@@ -6,7 +6,7 @@ import { ExpirationPlugin } from 'workbox-expiration';
 precacheAndRoute(self.__WB_MANIFEST);
 
 registerRoute(
-  ({ url }) => url.href.startsWith('https://food-api.dicoding.dev'),
+  ({ url }) => url.href.startsWith('https://www.themealdb.com/api.php'),
   new NetworkFirst({
     cacheName: 'food-api-cache',
     plugins: [
@@ -36,16 +36,4 @@ self.addEventListener('push', (event) => {
   };
 
   event.waitUntil(self.registration.showNotification(notification.title, notification.options));
-});
-
-self.addEventListener('notificationclick', (event) => {
-  const clickedNotification = event.notification;
-  clickedNotification.close();
-
-  const chainPromise = async () => {
-    console.log('Notification has been clicked');
-    await self.clients.openWindow('https://www.dicoding.com/');
-  };
-
-  event.waitUntil(chainPromise());
 });
